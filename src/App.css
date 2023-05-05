@@ -1,0 +1,197 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Purple: hsl(259, 100%, 65%)
+- Light red: hsl(0, 100%, 67%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Off white: hsl(0, 0%, 94%)
+- Light grey: hsl(0, 0%, 86%)
+- Smokey grey: hsl(0, 1%, 44%)
+- Off black: hsl(0, 0%, 8%)
+
+## Typography
+
+### Body Copy
+
+- Font size (inputs): 32px
+
+### Font
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 400i, 700, 800i
+ */
+
+main {
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 0%, 100%);
+  height: 500px;
+  width: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 4%;
+  border-bottom-right-radius: 25%;
+}
+
+h3 {
+  margin: 0;
+}
+h4 {
+  margin: 0;
+  font-size: 10px;
+  font-weight: 400;
+  color: hsl(0, 100%, 67%);
+}
+
+/* INPUTS SECTION */
+
+form {
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.submit-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 20px 0px 0px;
+}
+
+.form-part {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+label {
+  color: hsl(0, 1%, 44%);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+.form-part.error label {
+  color: hsl(0, 100%, 67%);
+}
+
+.form-part.error input {
+  border-color: hsl(0, 100%, 67%);
+}
+input {
+  color: hsl(0, 1%, 44%);
+  font-weight: 700;
+  font-size: 22px;
+  width: 90px;
+  height: 40px;
+  border: 1px solid hsl(0, 0%, 86%);
+  border-radius: 8%;
+  padding: 8px 12px;
+}
+.results,
+.inputs {
+  display: flex;
+  gap: 20px;
+}
+.btn-submit {
+  border: none;
+  background-color: hsl(259, 100%, 65%);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.btn-icon {
+  width: 35px;
+  height: 35px;
+}
+
+/* RESULTS SECTION */
+
+.all-results {
+  margin: 0px 30px 20px 30px;
+}
+.results {
+  font-size: 52px;
+}
+
+.line {
+  display: block;
+  width: 90%;
+  height: 1px;
+  border-top: 1px solid hsl(0, 0%, 86%);
+}
+.purple-number {
+  color: hsl(259, 100%, 65%);
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: 6px;
+}
+
+.results-time {
+  font-weight: 800;
+  font-style: italic;
+}
+
+@media screen and (max-width: 375px) {
+  main {
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    border-bottom-right-radius: 0;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+
+  form {
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  input {
+    width: 70px;
+  }
+
+  .all-results {
+    margin: 0px 10px 20px 10px;
+  }
+
+  .line {
+    width: 100%;
+    position: relative;
+    transform: translateY(-50%);
+  }
+
+  .submit-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 30px 0;
+    position: relative;
+  }
+
+  .btn-submit {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
