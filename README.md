@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot aplikacji](https://imgur.com/a/GlBtpPs)
+https://imgur.com/a/GlBtpPs
 
 ### Links
 
